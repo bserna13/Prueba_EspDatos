@@ -42,22 +42,22 @@ BULK INSERT CRM_CARTERA
 FROM 'C:\Users\Brahi\Documents\GitHub\Prueba_EspDatos\CRM_CARTERA.csv'
 WITH
 (
-    FIELDTERMINATOR = ';',  -- Especifica el separador de campos
+    FIELDTERMINATOR = ';',  -- Separador de campos
     ROWTERMINATOR = '\n',   -- Especifica el separador de filas
-    FIRSTROW = 2,           -- Si tu CSV tiene encabezados, usa esta opción para empezar desde la segunda fila
-    CODEPAGE = '65001',     -- Asegura que se use la codificación UTF-8
-    TABLOCK                -- Utiliza un bloqueo de tabla para la operación de inserción masiva
+    FIRSTROW = 2,           -- Empezar desde la segunda fila
+    CODEPAGE = '65001',     -- Codificación UTF-8
+    TABLOCK                -- Utiliza un bloqueo de tabla para la operación de inserción
 );
 
 BULK INSERT CRM_TERCEROS
 FROM 'C:\Users\Brahi\Documents\GitHub\Prueba_EspDatos\CRM_TERCEROS.csv'
 WITH
 (
-    FIELDTERMINATOR = ';',  -- Especifica el separador de campos
+    FIELDTERMINATOR = ';',  -- Separador de campos
     ROWTERMINATOR = '\n',   -- Especifica el separador de filas
-    FIRSTROW = 2,           -- Si tu CSV tiene encabezados, usa esta opción para empezar desde la segunda fila
-    CODEPAGE = '65001',     -- Asegura que se use la codificación UTF-8
-    TABLOCK                -- Utiliza un bloqueo de tabla para la operación de inserción masiva
+    FIRSTROW = 2,           -- Empezar desde la segunda fila
+    CODEPAGE = '65001',     -- Codificación UTF-8
+    TABLOCK                -- Utiliza un bloqueo de tabla para la operación de inserción
 );
 
 BULK INSERT PREDICTIVO
